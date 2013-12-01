@@ -8,8 +8,11 @@ function setupSmoothScrolling() {
 	       if ($target) {
 	         var targetOffset = $target.offset().top;
 	         $(this).click(function() {
-	           $('html, body').animate({scrollTop: targetOffset}, 1000);
-	           return false;
+	         	$('article').hide();
+	           	$('html, body').animate({scrollTop: targetOffset}, 1000, function() {
+					$('article').show();
+	           	});
+	           	return false;
 	         });
 	      }
 	    }

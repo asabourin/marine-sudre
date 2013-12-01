@@ -3,6 +3,6 @@
 $(document).ready(function(){
 	setupParallaxBackgrounds();
     setupSmoothScrolling();
-    jQuery("#bigtext").fitText(0.7);
+    jQuery("#bigtext").fitText(0.73);
 }); 
 
