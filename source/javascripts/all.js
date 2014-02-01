@@ -16,6 +16,22 @@ $(document).ready(function(){
         }
     });
 
-    
+
+    $('section').each(function(i) {
+		var position = $(this).position();
+		$(this).scrollspy({
+			min: position.top - Math.round($(this).height()/2),
+			max: position.top + Math.round($(this).height()/2),
+			onEnter: function(element, position) {
+				$("#link"+element.id).addClass('active');
+			},
+			onLeave: function(element, position) {
+				$("#link"+element.id).removeClass('active');
+			}
+		});
+	});
+
+
+
 }); 
 
