@@ -19,14 +19,19 @@ section {
 }
 
 article { 
-  height: 200px; 
   position: absolute; 
   text-align: center; 
   top: 0;
-  bottom: 0;
-  margin: auto;
-  
-  width: 50%; 
+  margin: 50px;
+  background-color: rgba(255,255,255,0.8);
+  max-width: 30%; 
+  min-width: 200px;
+  padding: 10px 30px;
+  font-family: 'Open Sans';
+}
+
+article.dark {
+  background-color: rgba(0,0,0,0.4);
 }
 
 article.left {
@@ -37,6 +42,10 @@ article.right {
   right: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 #bigtext {
   text-align:center;
   width: 100%;
@@ -44,7 +53,7 @@ article.right {
   color: rgba(255,255,255,0.6);
   position: absolute;
   top: 0;
-  font-family: 'Arial', sans-serif !important;
+  font-family: 'Open Sans';
   letter-spacing: -0.05em;
   margin-top: -0.1em;
 }
@@ -75,6 +84,11 @@ article.right {
   font-weight: bold;
   padding: 0.8em 0;
   display: inline-block;
+  font-family: 'Open Sans'
+}
+
+img.logo {
+  height: 50px
 }
 
 .welcome {
