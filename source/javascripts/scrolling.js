@@ -8,7 +8,7 @@ function setupSmoothScrolling() {
 	       if ($target) {
 	         var targetOffset = $target.offset().top;
 	         $(this).click(function() {
-	         	$('article').hide();
+	         	$('article').fadeOut();
 	           	$('html, body').animate({scrollTop: targetOffset}, 1000, function() {
 					$('article').show();
 	           	});

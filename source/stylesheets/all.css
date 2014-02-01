@@ -28,7 +28,7 @@ article {
   position: absolute; 
   text-align: center; 
   top: 0;
-  margin: 50px;
+  margin: 100px 50px;
   background-color: rgba(255,255,255,0.8);
   padding: 10px 20px;
   font-family: 'Open Sans';
@@ -66,20 +66,21 @@ p {
 #bigtext {
   text-align:center;
   width: 100%;
+  height: 300px;
   font-weight: bold;
   color: rgba(255,255,255,0.6);
   position: absolute;
-  top: 0;
-  
-  letter-spacing: -0.05em;
-  margin-top: -0.1em;
+  top: -5%;
 }
+
 
 #subtitle {
   text-align: center;
   width: 100%;
-  height: 50%;
+  height: 100px;
   color: rgba(255,255,255,0.6);
+  position: absolute;
+  bottom: 3em;
 }
 
 #nav {
@@ -88,9 +89,14 @@ p {
   margin: 0;
   padding: 0;
   width: 100%;
-  position: fixed;
+  position: absolute;
   text-align: center;
   z-index: 100;
+}
+
+#nav.fixed {
+  position: fixed;
+  top:0;
 }
 
 #nav li{
