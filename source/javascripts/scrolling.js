@@ -18,3 +18,25 @@ function setupSmoothScrolling() {
 	    }
 	  });
 }
+
+function setupScrollSpy() {
+	$('section').each(function(i) {
+		var position = $(this).position();
+        var url = "url("+$(this).data("photo")+")"
+		$(this).scrollspy({
+			min: position.top - Math.round($("body").height()/2),
+			max: position.top + Math.round($("body").height()/2),
+			onEnter: function(element, position) {
+				$("#link"+element.id).addClass('active');
+                $("#article"+element.id).fadeIn(600);
+                $("#oldbackground").css("background-image", $("#background").css("background-image")).show();
+                $("#background").css("background-image", url).hide();
+                $("#background").fadeIn(1000);
+			},
+			onLeave: function(element, position) {
+				$("#link"+element.id).removeClass('active');
+                $("#article"+element.id).fadeOut();
+			}
+		});
+	});
+}
