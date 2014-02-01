@@ -7,4 +7,4 @@ function setupParallaxBackgrounds(){$window=$(window),$('section[data-type="back
 *
 * Date: Thu May 05 14:23:00 2011 -0600
 */
-!function(t){t.fn.fitText=function(n,e){var i=n||1,o=t.extend({minFontSize:Number.NEGATIVE_INFINITY,maxFontSize:Number.POSITIVE_INFINITY},e);return this.each(function(){var n=t(this),e=function(){n.css("font-size",Math.max(Math.min(n.width()/(10*i),parseFloat(o.maxFontSize)),parseFloat(o.minFontSize)))};e(),t(window).on("resize.fittext orientationchange.fittext",e)})}}(jQuery),$(document).ready(function(){setupParallaxBackgrounds(),setupSmoothScrolling(),jQuery("#bigtext").fitText(.73)});
+!function(t){t.fn.fitText=function(n,e){var i=n||1,o=t.extend({minFontSize:Number.NEGATIVE_INFINITY,maxFontSize:Number.POSITIVE_INFINITY},e);return this.each(function(){var n=t(this),e=function(){n.css("font-size",Math.max(Math.min(n.width()/(10*i),parseFloat(o.maxFontSize)),parseFloat(o.minFontSize)))};e(),t(window).on("resize.fittext orientationchange.fittext",e)})}}(jQuery),$(document).ready(function(){setupParallaxBackgrounds(),setupSmoothScrolling(),jQuery("#bigtext").fitText(.7)});
