@@ -20,7 +20,7 @@ function setupSmoothScrolling() {
 }
 
 function setupScrollSpy() {
-	$('section').each(function(i) {
+	$('.section').each(function(i) {
 		var position = $(this).position();
         var url = "url('"+$(this).data("photo")+"')"
 		$(this).scrollspy({
