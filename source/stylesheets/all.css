@@ -24,14 +24,18 @@ article {
   top: 0;
   margin: 50px;
   background-color: rgba(255,255,255,0.8);
-  max-width: 30%; 
-  min-width: 200px;
   padding: 10px 30px;
   font-family: 'Open Sans';
 }
 
+.column {
+  max-width: 30%; 
+  min-width: 200px;
+}
+
 article.dark {
   background-color: rgba(0,0,0,0.4);
+  color: rgba(255,255,255,0.8);
 }
 
 article.left {
@@ -40,6 +44,12 @@ article.left {
 
 article.right {
   right: 0;
+}
+
+article.middle {
+  left: 0;
+  right: 0;
+  margin: 50px;
 }
 
 p {
@@ -79,7 +89,7 @@ p {
 
 #nav a {
   text-decoration: none;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.9);
   font-size: 1.5em;
   font-weight: bold;
   padding: 0.8em 0;
@@ -87,8 +97,14 @@ p {
   font-family: 'Open Sans'
 }
 
-img.logo {
-  height: 50px
+a.sponsor {
+  height: 50px;
+  width: 30%;
+  display: inline-table;
+}
+
+a.sponsor img {
+  max-height: 50px;
 }
 
 .welcome {
