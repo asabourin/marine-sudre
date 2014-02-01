@@ -6,6 +6,11 @@ html, body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 section {
   min-height: 100%;
   min-width: 100%;
@@ -24,13 +29,13 @@ article {
   top: 0;
   margin: 50px;
   background-color: rgba(255,255,255,0.8);
-  padding: 10px 30px;
+  padding: 10px 20px;
   font-family: 'Open Sans';
 }
 
 .column {
-  max-width: 30%; 
-  min-width: 200px;
+  width: 30%; 
+  min-width: 250px;
 }
 
 article.dark {
@@ -107,11 +112,11 @@ a.sponsor img {
   max-height: 50px;
 }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: 2s; }
+.fadein {
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: 1s; }
 
-@-webkit-keyframes welcome {
+@-webkit-keyframes fadein {
   from {
     opacity: 0;
   }
@@ -122,3 +127,16 @@ a.sponsor img {
    opacity: 100%;
   }
 }
+
+/* You can modify these CSS styles */
+.vimeo img { border: 0; }
+.vimeo a, .vimeo a:link, .vimeo a:visited, .vimeo a:active { color: black; text-decoration: none; cursor: pointer; }
+.vimeo a:hover { color:#00CCFF; }
+.vimeo #vimeo_badge_logo { margin-top:10px; width: 57px; height: 16px; }
+.vimeo .credit { font: normal 11px verdana,sans-serif; }
+.vimeo .clip { padding:0; display: inline-block; margin:0 10px 10px 0;}
+.vimeo .caption { white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+.vimeo .clear { display: block; clear: both; visibility: hidden; }
+.vimeo .s160 { width: 160px; } .vimeo .s80 { width: 80px; } .vimeo .s100 { width: 100px; } .vimeo .s200 { width: 200px; 
