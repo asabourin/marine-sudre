@@ -29,9 +29,7 @@ function setupScrollSpy() {
 			onEnter: function(element, position) {
 				$("#link"+element.id).addClass('active');
                 $("#article"+element.id).fadeIn(600);
-                $("#oldbackground").css("background-image", $("#background").css("background-image")).show();
-                $("#background").css("background-image", url).hide();
-                $("#background").fadeIn(1000);
+                fadeBackground(url)
 			},
 			onLeave: function(element, position) {
 				$("#link"+element.id).removeClass('active');
@@ -39,4 +37,10 @@ function setupScrollSpy() {
 			}
 		});
 	});
+}
+
+function fadeBackground(url) {
+	$("#oldbackground").css("background-image", $("#background").css("background-image")).show();
+    $("#background").hide().css("background-image", url);
+    $("#background").fadeIn(1000);
 }
