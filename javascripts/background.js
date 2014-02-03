@@ -1,1 +1,0 @@
-function setupParallaxBackgrounds(){$window=$(window),$('section[data-type="background"]').each(function(){var o=$(this);$(window).scroll(function(){var n=-(($window.scrollTop()-o.offset().top)/o.data("speed")),a="50% "+n+"px";o.css({backgroundPosition:a})})})}
