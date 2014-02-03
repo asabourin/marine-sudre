@@ -16,19 +16,20 @@ function maximizeTitle() {
 
 function setupScrollSpy() {
 	$('.section').each(function(i) {
-		var position = $(this).position();
-        var backgroundURL = $(this).css("background-image");
-		$(this).scrollspy({
-			min: position.top - Math.round($(this).height()/2),
-			max: position.top + Math.round($(this).height()/2),
+		var section = $(this);
+		var position = section.position();
+        var backgroundURL = section.css("background-image");
+		section.scrollspy({
+			min: position.top - Math.round(section.height()/2),
+			max: position.top + Math.round(section.height()/2),
 			onEnter: function(element, position) {
-				$("#link"+element.id).addClass('active');
-                $("#article"+element.id).fadeIn(600);
+				$("#link-"+element.id).addClass('active');
+                $("#article-"+element.id).fadeIn(600);
                 transitionBackgrounds(backgroundURL)
 			},
 			onLeave: function(element, position) {
-				$("#link"+element.id).removeClass('active');
-                $("#article"+element.id).fadeOut();
+				$("#link-"+element.id).removeClass('active');
+                $("#article-"+element.id).fadeOut();
 			}
 		});
 	});
